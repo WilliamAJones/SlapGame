@@ -3,11 +3,11 @@
 #### Objective:
 Students will use javascript in order to interact with the DOM to create a dynamic webpage.
 
-### Step 1 - GIT - Project Initialization
+<!-- ### Step 1 - GIT - Project Initialization
 
 1. Create a git repository named SlapGame
 2. Create the file index.html and a script file called game.js and a css file name game.css.
-3. Commit changes and push them back to GitHub.
+3. Commit changes and push them back to GitHub. -->
 
 ### Step 2 - HTML - Create page layout and Slap button
 
