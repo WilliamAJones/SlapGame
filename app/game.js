@@ -11,7 +11,8 @@ function tipFedora(){
         console.log('Current Player Health =', + playerHealth)  
 
         document.getElementById('previousAction').innerHTML ='You tipped your fedora dealing 5 Damage to your Enemy'
-        document.getElementById('previousActionImage').innerHTML ='<img src="./assets/tipgif.gif">'
+        document.getElementById('previousActionImage').innerHTML ='<img src="./assets/tipgif.gif">' 
+        document.getElementById('moreInfo').innerHTML = 'Enemy has counterattacked!'
 }
 
 function popCollar(){
@@ -24,6 +25,7 @@ function popCollar(){
         console.log('Current Player Health =', + playerHealth) 
         document.getElementById('previousAction').innerHTML ='You popped your trenchcoat collar dealing 10 Damage to your Enemy'
         document.getElementById('previousActionImage').innerHTML ='<img src="./assets/collar.gif">'  
+        document.getElementById('moreInfo').innerHTML = 'Enemy has counterattacked!'
 }
 
 function dropMlady(){
@@ -35,22 +37,12 @@ function dropMlady(){
         console.log('Current Enemy Health =', + enemyHealth) 
         console.log('Current Player Health =', + playerHealth)
         document.getElementById('previousAction').innerHTML ='Oh my, You have dropped a "Mlady" , dealing 20 Damage to your Enemy'
-        document.getElementById('previousActionImage').innerHTML ='<img src="./assets/mlady.gif">'   
+        document.getElementById('previousActionImage').innerHTML ='<img src="./assets/mlady.gif">' 
+        document.getElementById('moreInfo').innerHTML = 'Enemy has counterattacked!'  
 }
+//placeholder for enemy attacks//
 function enemyCounter(){
 playerHealth=playerHealth-5
-}
-
-function drawKatana1(){
-    let playerHealth= Math.random();
-    if (playerHealth < 49) {
-        playerHealth = 0;
-     }else if(playerHealth >51) {
-        enemyHealth= 0;
-    }
-   console.log(playerHealth)
-   console.log(enemyHealth)
-    drawHealth()
 }
 
 function drinkDew1(){
@@ -61,7 +53,8 @@ function drinkDew1(){
     }
 drawHealth()
 document.getElementById('previousAction').innerHTML = 'YOU DO THE DEW! : You have gained 20 HP';
-document.getElementById('previousActionImage').innerHTML ='<img src="./assets/dew.gif">'  
+document.getElementById('previousActionImage').innerHTML ='<img src="./assets/dew.gif">' 
+document.getElementById('moreInfo').innerHTML = 'DELICIOUS'  
 console.log('Current Player Health =', + playerHealth)
 console.log('Current Enemy Health =', + enemyHealth)
 }
@@ -74,8 +67,41 @@ function drinkDew2(){
     }
     drawHealth()
 document.getElementById('previousAction').innerHTML = 'ENEMY DOES THE DEW! : Enemy has gained 20 HP';
+document.getElementById('previousActionImage').innerHTML ='<img src="./assets/dew.gif">'
+document.getElementById('moreInfo').innerHTML = 'Enemy appears satisfied' 
 console.log('Current Player Health =', + playerHealth)
 console.log('Current Enemy Health =', + enemyHealth)
+}
+
+function drawKatana1(){
+    let katanaSwing = Math.random();
+    if (katanaSwing < .49) {
+        playerHealth = 0;
+        document.getElementById('previousActionImage').innerHTML ='<img src="./assets/katanalose.gif">'
+        document.getElementById('moreInfo').innerHTML = 'Your lack of skill has resulted in fatal self harm'
+     }else if(katanaSwing >.51) {
+        enemyHealth= 0;
+        document.getElementById('previousActionImage').innerHTML ='<img src="./assets/katanawin.gif">'
+        document.getElementById('moreInfo').innerHTML = 'YOUR POWER LEVEL IS OVER 9000'
+    }
+   console.log(playerHealth)
+   console.log(enemyHealth)
+    drawHealth()
+}
+function drawKatana2(){
+    let katanaSwing = Math.random();
+    if (katanaSwing < .49) {
+        enemyHealth = 0;
+        document.getElementById('previousActionImage').innerHTML ='<img src="./assets/katanawin.gif">'
+        document.getElementById('moreInfo').innerHTML = 'Your mind games have caused your opponent to destroy himself'
+     }else if(katanaSwing >.51) {
+        playerHealth= 0;
+        document.getElementById('previousActionImage').innerHTML ='<img src="./assets/katanalose.gif">'
+        document.getElementById('moreInfo').innerHTML = 'Why did you allow your opponent to draw his blade?'
+    }
+   console.log(playerHealth)
+   console.log(enemyHealth)
+    drawHealth()
 }
 
 function resetButton(){
@@ -86,9 +112,12 @@ function resetButton(){
         playerHealth=100
     }
         document.getElementById('previousAction').innerHTML = '';
+        document.getElementById('previousActionImage').innerHTML = '';
+        document.getElementById('moreInfo').innerHTML = '';
     drawHealth()
     console.log('Current Player Health =', + playerHealth)
     console.log('Current Enemy Health =', + enemyHealth) 
+
 }
 
 function drawHealth(){
@@ -103,6 +132,7 @@ function drawHealth(){
         } else if(playerHealth <=0 && enemyHealth > 0) {
             document.getElementById('previousAction').innerHTML = 'Darkness Hath Prevailed, Your enemy is victorious';
     }
+    
 }
 drawHealth()
 

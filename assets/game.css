@@ -8,6 +8,11 @@ h1{
     text-shadow: -1px -1p black;
     letter-spacing: 10px;
 }
+h4{
+    color:yellow;
+    text-shadow: -1px -1p black;
+    letter-spacing: 5px;
+}
 h5{
     color:yellow;
 }
@@ -18,24 +23,22 @@ h6{
     background-color: transparent;
     box-shadow: 2px 2px 4px #e7e7e7;
     border-radius: 4px;
-    padding: 5vw;
+    padding: 1vw;
     align-items: center;
 }
 
 
 .button {
-  background-color:white;
-  border: solid;
   color:black;
-  padding: 3px 3px;
+  padding: 1px 1px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
-  border-style: solid;
-  border-color: yellow;
+  border-style: dashed;
+  border-color:silver;
 }
 .buttonMain {
     background-color:silver;
@@ -54,16 +57,14 @@ a.button:hover {
   text-decoration: underline;
 }
 
-.pageMiddle{
-    height: 48vh;
+/* .pageMiddle{
+    height: 46vh;
 
-}
+}  */
 img{
-max-height: 100%;
-max-width: 100%;
-/* padding-top:30px; */
-border-style: solid;
-border-color: yellow;
+max-height: 75%;
+max-width: 75%;
+
 }
 
 .flip{
@@ -84,6 +85,10 @@ progress {
 }
 
 #previousAction{
+    color:yellow;
+    align-content: center;
+}
+#moreInfo{
     color:yellow;
     align-content: center;
 }

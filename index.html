@@ -13,10 +13,12 @@
 	<section class="container-fluid pageTop">
 		<div class="row align-items-center text-center full">
 			<div class="col-6 col-md-3 order-2 order-md-1 card">
-				<p>Your Fanny Pack</p>
-				<button class="button"onClick="drinkDew1()">"Do the Dew"</button>
-				<button class="button"onClick="eatChip1()">"Snack Strong"</button>
-				<button class="button"onClick="drawKatana1()">Draw Katana</button>
+				<h4>Inventory</h4>
+					<div class="d-flex">
+						<button class= "button" onClick="drinkDew1()" > <img src = "./assets/dewcan.png"></button>
+						<button class= "button" onClick="eatChip1()" > <img src = "./assets/doritos.png"></button>
+					</div>
+				<button class= "button" onClick="drawKatana1()" > <img src = "./assets/katana.png"></button>
 			</div>
 			<div class="col-sm-12 col-md-6 order-1 order-md-2 card">
 				<h1><i>Fedora Wars</i></h1>
@@ -29,29 +31,31 @@
 				</div>
 				<button class="buttonMain" onClick="resetButton()">RESET</button>
 			</div>
-			<div class="col-6 col-md-3 order-3 card">
-				<p>Enemy Fanny Pack</p>
-				<button class="button" onClick="drinkDew2()">"Do the Dew"</button>
-				<button class="button"onClick="drinkDew2()">"Snack Strong"</button>
-				<button class="button" onClick="drawKatana2()">Draw Katana</button>
+			<div class="col-6 col-md-3 order-3 card ">
+				<h4>Inventory</h4>
+					<div class="d-flex">
+						<button class= "button" onClick="drinkDew2()" > <img src = "./assets/dewcan.png"></button>
+						<button class= "button" onClick="eatChip2()" > <img src = "./assets/doritos.png"></button>
+					</div>
+				<button class= "button" onClick="drawKatana2()" > <img src = "./assets/katana.png"></button>
 			</div>
 		</div>
 	</section>
 	
-	<section class="container-fluid pageMiddle ">
-		<div class="row align-items-center text-center full pageMiddle">
-			<div class="col-4 order-1 pageMiddle d-flex card">
+	<section class="container-fluid pageMiddle">
+		<div class="row align-items-center text-center pageMiddle d-flex ">
+			<div class="col-4 col-md-3 order-1 pageMiddle card ">
+				<div id="playerHealth"div class="d-flex"></div>
 				<img src="assets/faceleft.png" img class="flip">
-					<div id="playerHealth">
-						</div>
 			</div>
-		<div class="col-4 order-2 pageMiddle d-flex text-center card">
+		<div class="col-4 col-md-6 order-2 pageMiddle text-center card ">
 				<span id="previousAction"></span>
 				<span id="previousActionImage"></span>
+				<span id="moreInfo"></span>
+				
 		</div>	
-			<div class="col-4 order-3 justify-content-end pageMiddle d-flex card">
-				<div id="enemyHealth">
-					</div>
+			<div class="col-4 col-md-3 order-3 align-items-center pageMiddle card ">
+				<div id="enemyHealth" div class="d-flex"></div>
 				<img src="./assets/faceleft.png"img class= "invert">
 			</div>
 		</div>
