@@ -6,26 +6,54 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.css">
-	<title>Fedora Wars</title>
+    <link rel="stylesheet" href="./assets/game.css">
+	<title>FEDORA WARS</title>
 </head>
 <body>
 	<section class="container-fluid pageTop">
 		<div class="row align-items-center text-center full">
-			<div class="col-sm-12 col-md-3 card">
-				<p>test</p>
+			<div class="col-6 col-md-3 order-2 order-md-1 card">
+				<p>Your Fanny Pack</p>
+				<button class="button"onClick="drinkDew1()">"Do the Dew"</button>
+				<button class="button"onClick="eatChip1()">"Snack Strong"</button>
+				<button class="button"onClick="drawKatana1()">Draw Katana</button>
 			</div>
-			<div class="col-sm-12 col-md-6 card">
-				<p>test</p>
+			<div class="col-sm-12 col-md-6 order-1 order-md-2 card">
+				<h1><i>Fedora Wars</i></h1>
+				<h5><i>The fedora wars have begun, brother has turned against brother...</i></h5>
+				<h6>Who will prevail?</h6>
+				<div class="d-flex">
+					<button class="buttonMain"onClick="tipFedora()">Tip Fedora</button>
+					<button class="buttonMain"onClick="popCollar()">Pop Trenchcoat Collar</button>
+					<button class="buttonMain" onClick="dropMlady()">Drop a "M'lady"</button>
+				</div>
+				<button class="buttonMain" onClick="resetButton()">RESET</button>
 			</div>
-			<div class="col-sm-12 col-md-3 card">
-				<p>test</p>
+			<div class="col-6 col-md-3 order-3 card">
+				<p>Enemy Fanny Pack</p>
+				<button class="button" onClick="drinkDew2()">"Do the Dew"</button>
+				<button class="button"onClick="drinkDew2()">"Snack Strong"</button>
+				<button class="button" onClick="drawKatana2()">Draw Katana</button>
 			</div>
 		</div>
 	</section>
-	<section class="container-fluid pageMiddle">
-		<div class="row row align-items-center text-center full">
-
+	
+	<section class="container-fluid pageMiddle ">
+		<div class="row align-items-center text-center full pageMiddle">
+			<div class="col-4 order-1 pageMiddle d-flex card">
+				<img src="assets/faceleft.png" img class="flip">
+					<div id="playerHealth">
+						</div>
+			</div>
+		<div class="col-4 order-2 pageMiddle d-flex text-center card">
+				<span id="previousAction"></span>
+				<span id="previousActionImage"></span>
+		</div>	
+			<div class="col-4 order-3 justify-content-end pageMiddle d-flex card">
+				<div id="enemyHealth">
+					</div>
+				<img src="./assets/faceleft.png"img class= "invert">
+			</div>
 		</div>
 	</section>
 	<section class="container-fluid pageBottom">
@@ -35,7 +63,7 @@
 	</section>
 
 
-<script src="app/app.js"></script>	
+<script src="app/game.js"></script>	
 </body>
 </html>
 </html>

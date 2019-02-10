@@ -1,0 +1,89 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    color:yellow;
+    text-shadow: -1px -1p black;
+    letter-spacing: 10px;
+}
+h5{
+    color:yellow;
+}
+h6{
+    color: red
+}
+.card{
+    background-color: transparent;
+    box-shadow: 2px 2px 4px #e7e7e7;
+    border-radius: 4px;
+    padding: 5vw;
+    align-items: center;
+}
+
+
+.button {
+  background-color:white;
+  border: solid;
+  color:black;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: yellow;
+}
+.buttonMain {
+    background-color:silver;
+    border: solid;
+    color:black;
+    padding: 5px 5px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+a.button:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.pageMiddle{
+    height: 48vh;
+
+}
+img{
+max-height: 100%;
+max-width: 100%;
+/* padding-top:30px; */
+border-style: solid;
+border-color: yellow;
+}
+
+.flip{
+        transform: scaleX(-1); 
+}
+.invert{
+    filter: invert(100%);
+}
+
+progress {
+    background-color:white;
+    border: 0;
+    height: 40px;
+    width: 100px;
+    border-radius: 5%;
+    color:yellow;
+    
+}
+
+#previousAction{
+    color:yellow;
+    align-content: center;
+}
