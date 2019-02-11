@@ -92,3 +92,7 @@ progress {
     color:yellow;
     align-content: center;
 }
+#previousActionImage{
+    color:red;
+    align-content: center;
+}
