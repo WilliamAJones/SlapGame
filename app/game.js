@@ -46,6 +46,8 @@ function popCollar() {
         enemyHealth = enemyHealth -damageAmount;
     }
     enemyCounter()
+    enemyCounter()
+    enemyCounter() 
     drawHealth()
     console.log('Current Enemy Health =', + enemyHealth)
     console.log('Current Player Health =', + playerHealth)
@@ -121,7 +123,7 @@ function drinkDew2() {
 function eatChip1(){
 playerDoritosActive = true;
 document.getElementById('playerChip').disabled = true;
-document.getElementById('playerChip').opinnerHTML = `<img src="./assets/doritoshot.png">`
+document.getElementById('playerChip').innerHTML = `<img src="./assets/doritoshot.png">`
 document.getElementById('previousAction').innerHTML = ' DORITO DOUBLE DAMAGE ACTIVE FOR NEXT ATTACK!';
 document.getElementById('previousActionImage').innerHTML = `<img src="./assets/2x.png">`;
 document.getElementById('moreInfo').innerHTML = '';
@@ -181,7 +183,7 @@ function resetButton() {
     }
     document.getElementById('previousAction').innerHTML = ' tip: Doritos can only be used once per game';
     document.getElementById('previousActionImage').innerHTML = 'tip: Katana can one shot, both the enemy and yourself';
-    document.getElementById('moreInfo').innerHTML = 'tip: Mtn. Dew can be used multiple times ';
+    document.getElementById('moreInfo').innerHTML = 'tip: There are 5 endings, have you seen them all?';
     document.getElementById('playerChip').disabled = false;
     document.getElementById('enemyChip').disabled = false;
     document.getElementById('playerChip').innerHTML = `<img src="./assets/doritos.png">`
