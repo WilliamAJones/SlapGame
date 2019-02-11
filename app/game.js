@@ -123,7 +123,7 @@ function drinkDew2() {
 function eatChip1(){
 playerDoritosActive = true;
 document.getElementById('playerChip').disabled = true;
-document.getElementById('playerChip').innerHTML = `<img src="./assets/doritoshot.png">`
+document.getElementById('playerChip').innerHTML = `<img src="./assets/doritoburn.png">`
 document.getElementById('previousAction').innerHTML = ' DORITO DOUBLE DAMAGE ACTIVE FOR NEXT ATTACK!';
 document.getElementById('previousActionImage').innerHTML = `<img src="./assets/2x.png">`;
 document.getElementById('moreInfo').innerHTML = '';
@@ -131,7 +131,7 @@ document.getElementById('moreInfo').innerHTML = '';
 function eatChip2(){
 enemyDoritosActive = true;
 document.getElementById('enemyChip').disabled = true;
-document.getElementById('enemyChip').innerHTML = `<img src="./assets/doritoshot.png">`
+document.getElementById('enemyChip').innerHTML = `<img src="./assets/doritoburn.png">`
 document.getElementById('previousAction').innerHTML = ' DORITO DOUBLE DAMAGE ACTIVE FOR NEXT ATTACK!';
 document.getElementById('previousActionImage').innerHTML = `<img src="./assets/2x.png">`;
 document.getElementById('moreInfo').innerHTML = '';
