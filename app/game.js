@@ -155,7 +155,7 @@ function drawKatana1() {
     console.log(enemyHealth)
     // drawHealth()
     // document.getElementById('previousActionImage').innerHTML = '<img src="./assets/katanawin.gif">'
-    // document.getElementById('moreInfo').innerHTML = 'YOUR POWER LEVEL IS OVER 9000'
+    // document.getElementById('moreInfo').innerHTML = 'YOUR POWER LEVEL IS OVER 9000' 
 }
 function drawKatana2() {
     let katanaSwing = Math.random();
